@@ -46,7 +46,7 @@ session_start();
 
         <?php } ?>
 
-        <li></li>
+        <li><a href="registerUser.php">Register</a></li>
         <li><a href="adminPanel.php">Admin Panel</a></li>
 
       </ul>
@@ -126,7 +126,7 @@ Maruti Suzuki	4,645.75 	||
 <div class="col s4 m4 l4" style="margin-right:0px;">
       <div class="card blue-grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title"> <?php echo substr($row['title'],0,40); ?>  </span>
+          <span class="card-title"> <?php echo substr($row['title'],0,39); ?>  </span>
           <p> <?php echo substr($row['description'],0,100); ?></p>
         </div>
         <div class="card-action">
@@ -148,7 +148,19 @@ Maruti Suzuki	4,645.75 	||
 
 
 
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
 
 
 </html>
