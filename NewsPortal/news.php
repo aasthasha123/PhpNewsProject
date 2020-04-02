@@ -46,7 +46,6 @@ else{
     
 </div>
 
-
 <div class="text-right" style="float:right;"  >
     <button class="btn btn-danger">
         <a href="addNews.php" style="color:white;"> Add News</a>
@@ -56,6 +55,8 @@ else{
         
     <div class="container">
 
+
+    <h3 style="margin-top:30px;margin-bottom:20px;">News </h3>
 
 
 
