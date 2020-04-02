@@ -1,22 +1,12 @@
 <?php
-
     session_start();
-    
-
 ?>
-
-
 
 
 <html>
 <head>
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
 </head>
 <body>
 
@@ -41,7 +31,7 @@
 
         <?php } ?>
 
-
+        <li><a href="registerUser.php">Register</a></li>
         <li><a href="adminPanel.php">Admin Panel</a></li>
         
       </ul>
@@ -107,9 +97,9 @@ Maruti Suzuki	4,645.75 	||
             ?>
            <li style="height:100%;width:100%;" >
         <img  src="images/<?php echo $row['thumbnail']; ?>"  width="100%" height="100%"  alt="">
-        <div class="caption"  style="padding-top:60px;">
-          <h2 class="light grey-text text-lighten-5"> <?php echo $row['title'] ?> </h2>
-          <h5 class="light grey-text text-lighten-3" style="color:white;">
+        <div class="caption"  style="padding:30px;background: rgba(0, 0, 0, 0.3);">
+          <h2 class="light grey-text text-lighten-5" style="color:white;"> <?php echo $row['title'] ?> </h2>
+          <h5 class="light grey-text text-darken-5" style="color:white;">
           <a style="color:white;text-decoration:underline;" href="detail.php?detail=<?php echo $row['id'];?>">Read More </a>
          
 
@@ -169,12 +159,6 @@ Maruti Suzuki	4,645.75 	||
 
   </div>
   
-
-
-
-
-
-
 
 
 
@@ -247,7 +231,7 @@ Maruti Suzuki	4,645.75 	||
       <span class="badge blue " style="color:white;"> <?php echo $row['category'];?> </span>
         
       <h4>  <?php echo $row['title'];?> </h4>
-      <!-- <img src="images/<?php echo $row['thumbnail']?>" style="height:100px;float:right;"  alt=""> -->
+       <!-- <img src="images/<?php echo $row['thumbnail']?>" style="height:100px;float:right;"  alt="">  -->
       <p><?php echo substr($row['description'],0,150); ?> ... </p>
 
   <a href="detail.php?detail=<?php echo $row['id'];?>">Read More </a>
