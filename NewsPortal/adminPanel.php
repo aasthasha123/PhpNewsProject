@@ -14,54 +14,6 @@
 
 
 
-<?php
-
-    include('db/connection.php');
-    // For First Slide
-    $query = mysqli_query($conn,"select * from news where id=1 ");
-    while($row = mysqli_fetch_array($query)){
-        $title = $row['title'];
-        $des = $row['description'];
-        $category = $row['category'];
-        $thumbnail = $row['thumbnail'];
-        $id = $row['id'];
-
-    }
-
-
-    $query2 = mysqli_query($conn,"select * from news where id=2 ");
-    while($row2 = mysqli_fetch_array($query2)){
-        $title2 = $row2['title'];
-        $des2 = $row2['description'];
-        $category2 = $row2['category'];
-        $thumbnail2 = $row2['thumbnail'];
-        $id2 = $row['id'];
-
-    }
-
-
-
-
-
-    $query3 = mysqli_query($conn,"select * from news where id=3 ");
-    while($row3 = mysqli_fetch_array($query3)){
-        $title3 = $row3['title'];
-        $des3 = $row3['description'];
-        $category3 = $row3['category'];
-        $thumbnail3 = $row3['thumbnail'];
-        $id3 = $row['id'];
-
-    }
-
-
-
-
-?>
-
-
-
-
-
 <html>
 <head>
     <!-- Compiled and minified CSS -->
@@ -113,6 +65,7 @@
     <div class="container">
 
 
+    <h3 style="margin-top:30px;margin-bottom:20px;">News</h3>
 
 
     <table class="table table-bordered" >
