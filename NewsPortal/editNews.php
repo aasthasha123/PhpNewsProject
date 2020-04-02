@@ -65,10 +65,6 @@ else{
 
 
 
-<div class="form-group">
-<label for="file">Choose Image:</label>
-<input type="file" class="form-control img-thumbnail" id="file" name="thumbnail" >
-</div>
 
 <div class="form-group">
 <label for="description">Category:</label>
@@ -137,18 +133,10 @@ else{
         
         $file = $_FILES['thumbnail']['name'];
         $tmp_file = $_FILES['thumbnail']['tmp_name'];
-        if($tmp_file){
-
-            move_uploaded_file($tmp_file,"images/$file");
-            $query1 = mysqli_query($conn,"update news set title = '$title' , description='$des', category='$category',
-            thumbnail='$file' where id='$id' ");
-    
-
-        }
-        else{
+        
             $query1 = mysqli_query($conn,"update news set title = '$title' , description='$des', category='$category' where id='$id' ");
     
-        }
+    
 
         if($query1){
             header('location:news.php');
