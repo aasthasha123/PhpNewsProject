@@ -54,6 +54,8 @@ else{
 
     
 
+    <h3 style="margin-top:30px;margin-bottom:20px;">Categories</h3>
+
 
 
     <table class="table table-bordered" >
