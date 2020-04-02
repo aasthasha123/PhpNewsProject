@@ -15,31 +15,8 @@ else{
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
 </head>
 <body>
-
-    <!-- <div>
-
-    <nav class="light-blue darken-4">
-    <div class="nav-wrapper">
-    <a href=" {{ route('news.index') }} " class="brand-logo right"> WorldToday </a>
-    
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="home.php" > Home  </a></li>
-        <li><a href="news.php">News</a></li>
-        
-        <li><a href="category.php">Category</a></li>
-        <li><a  href="logout.php">Logout</a> </li>
-        
-        
-      </ul>
-    </div>
-  </nav>
-    
-    </div> -->
-
-
     <div class="text-right" style="float:right;"  >
     <a href="news.php" style="color:white;">
         <button class="btn btn-danger">
