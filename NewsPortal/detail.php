@@ -51,6 +51,7 @@ session_start();
        <li><a href="categoryPage.php?category=<?php echo $row['category_name'];?>" > <?php echo $row['category_name'];?> </a></li>
 
     <?php } ?>
+    <li><a href="registerUser.php">Register</a></li>
 
 
     <li><a href="adminPanel.php">Admin Panel</a></li>
@@ -82,7 +83,7 @@ session_start();
      
 
 </br>
-    <img style="height:70%"  src="images/<?php echo $thumbnail;?>" alt="">
+    <img style="height:55%;"  src="images/<?php echo $thumbnail;?>" alt="">
 
     
     <h6 style="margin-top:50px;">
